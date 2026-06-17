@@ -1,0 +1,20 @@
+{
+  "name": "guard-job-finder",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "fetch:jobs": "node scripts/fetch-jobs.mjs",
+    "db:init": "node scripts/init-db.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "next": "^16.0.10",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
+  },
+  "devDependencies": {}
+}
