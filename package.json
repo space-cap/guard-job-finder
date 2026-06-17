@@ -8,7 +8,10 @@
     "build": "next build",
     "start": "next start",
     "fetch:jobs": "node scripts/fetch-jobs.mjs",
-    "db:init": "node scripts/init-db.mjs"
+    "fetch:jobs:notify-all": "node scripts/fetch-jobs.mjs --notify-all",
+    "notify:latest": "node scripts/notify-latest.mjs",
+    "db:init": "node scripts/init-db.mjs",
+    "test:slack": "node scripts/test-slack-webhook.mjs"
   },
   "dependencies": {
     "cheerio": "^1.1.2",
